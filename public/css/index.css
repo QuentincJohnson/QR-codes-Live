@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&family=Source+Serif+Pro:wght@400;700&display=swap');
+*{text-decoration: none;}
+
+:root{
+  --monokuma: #e13c34;
+}
+
+@font-face {
+  font-family: 'persona';
+  src: url(../fonts/earwig\ factory\ rg.ttf);
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+
+.split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*.hope{
+
+}*/
+
+.despair{
+  background-color: black;
+  color: white;
+}
+
+.logo{
+  color: black;
+  padding: 5vh 5vw;
+  padding-top: 4remx
+}
+
+.head{
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.mobile-head{
+  display:none;
+}
+
+.head > li{
+  display: inline;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin: 0rem 2rem;
+  border-bottom: 4px solid var(--monokuma);
+}
+
+/* intro================ */
+
+/* about */
+.intro{
+  margin-top: 30vh;
+  text-align: center;
+}
+
+.intro > h1{
+  font-size: 4rem;
+  padding-bottom: 1em;
+}
+
+.intro > span{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.about{
+  text-align: center;
+  margin: 3rem;
+}
+
+.about > h1{
+  font-size: 3rem;
+  padding: 3rem;
+  padding-bottom: 0rem;
+}
+.mono-under{
+  background-color: var(--monokuma);
+  height: 1.5rem;
+  border: 4px solid black;
+  margin: 0rem 10vw;
+  margin-bottom: 13vh;
+}
+.about > p{
+  font-weight: 300;
+  font-size: 1.8rem;
+  border: 2px solid black;
+  padding: 3rem
+}
+
+.education{
+  text-align:center;
+}
+
+.education > h1{
+  font-size: 2rem;
+  border-bottom: 2px solid black;
+  margin: 0vh 4vw;
+
+}
+.education > h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.education > span{  
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.education > div{
+  font-size: 1.2rem;
+}
+
+/* Skills */
+
+.general{
+  margin-top: 7rem;
+  padding: 0vw 5vw;
+}
+.despair-title{
+  font-size: 3rem;
+  border-bottom: 2px solid var(--monokuma) ;
+  margin: 0rem 8vw;
+  margin-bottom: 1rem;
+  padding-bottom: 5.5rem;
+}
+.skill-list{
+  line-height: 2.5rem;
+  display: block; 
+  list-style-type: square;
+  padding-left: 2rem;
+  margin-top: 1em; 
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+.detailed{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top:4rem;
+}
+.detailed > div > h1{
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--monokuma);
+  margin: 0vh 2vw
+}
+
+.tool{
+  font-size: 3rem;
+  border-bottom: 4px solid white ;
+  padding-bottom: 1rem;
+  margin: 0vh 5vw;
+}
+
+/* work experience */
+
+.title{
+  font-size: 3rem;
+  padding: 3rem;
+  padding-bottom: 0rem;
+  margin-top: -38vh;
+}
+
+.works{
+  padding: 1rem;
+  font-family: 'persona';
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.works > li:hover{
+  font-size: 3.5rem;
+}
+
+
+.mobile-foot{
+  display: none;
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.contact-fix{
+  margin: 4rem;
+  padding-bottom: 3rem;;
+}
+.person{
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.links{
+  font-size: 3rem;
+}
+.desk-foot{
+  margin-bottom: 3rem;
+}
+
+.designW{
+  border: 2px solid black;
+  margin: 0% 22.5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .split{
+    display: block;
+  }
+  .head{
+    display:none;
+  }
+  .mobile-head{
+    display:block;
+  }
+  .desk-foot{
+    display: none;
+  }
+  .mobile-head{
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  .mobile-head > ul > li{
+    display: inline;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin: 0rem 2rem;
+    border-bottom: 4px solid var(--monokuma);
+  }
+  .logo{
+    padding-top: 5rem;
+    margin-bottom: -8rem;
+  }
+  .about > h1{
+    font-size: 2rem;
+  }
+  .about > p{
+    font-size: 1.5rem
+  }
+  .title{
+    margin-top: 2rem
+  }
+  .intro{
+    padding: 3rem 0rem;
+  }
+  .mobile-fix{
+    padding: 0.3rem 0rem;
+  }
+  .detailed{
+    display: block;
+    margin: 2rem 2rem
+  }
+  .education{
+    margin-bottom: 2rem;
+  }
+  .pad-fix{
+    padding-bottom: 2rem;
+  }
+}
+
+
+
+
+
+
+
